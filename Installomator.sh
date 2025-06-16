@@ -348,7 +348,7 @@ if [[ $(/usr/bin/arch) == "arm64" ]]; then
     fi
 fi
 VERSION="10.8beta"
-VERSIONDATE="2025-04-25"
+VERSIONDATE="2025-06-16"
 
 # MARK: Functions
 
@@ -5608,6 +5608,13 @@ joplin)
     downloadURL="$(downloadURLFromGit laurent22 joplin)"
     appNewVersion="$(versionFromGit laurent22 joplin)"
     expectedTeamID="A9BXAFS6CT"
+    ;;
+jprofiler)
+    name="JProfiler"
+    type="dmg"
+    downloadURL="https://download.ej-technologies.com/jprofiler/jprofiler_macos_12_0_4.dmg"
+    appNewVersion="$(curl -s https://www.ej-technologies.com/jprofiler/changelog | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+' | head -n 1)"   
+    expectedTeamID="989KYA3D43"
     ;;
 jre8)
     name="Java Runtime Environment 8"
