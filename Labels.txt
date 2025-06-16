@@ -442,6 +442,7 @@ jetbrainstoolbox
 jetbrainswebstorm
 jitsimeet
 joplin
+jprofiler
 jre8
 jumpcloudpasswordmanager
 jumpdesktop
